@@ -1,6 +1,6 @@
-@extends('layout/main');
+@extends('layout/main')
 
-@section('title', 'Rico Aristama');
+@section('title', 'Rico Aristama')
 
 @section('container')
     <div class="container">
