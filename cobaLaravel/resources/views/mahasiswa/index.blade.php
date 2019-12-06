@@ -20,17 +20,19 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($mahasiswa as $mhs)
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Rico Aristama</td>
-                                <td>173040052</td>
-                                <td>raristama@gmail.com</td>
-                                <td>Teknik Informatika</td>
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>{{ $mhs->nama }}</td>
+                                <td>{{$mhs->nrp}}</td>
+                                <td>{{$mhs->email}}</td>
+                                <td>{{$mhs->jurusan}}</td>
                                 <td>
                                     <a href="" class="badge badge-success">Edit</a>
                                     <a href="" class="badge badge-danger">Delete</a>
                                 </td>
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
